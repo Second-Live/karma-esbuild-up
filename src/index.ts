@@ -259,12 +259,12 @@ function createEsbuildBundlerMap(
 
 	const config: esbuild.BuildOptions = {
 		target: "es2015",
+		platform: "browser",
 		...userConfig,
 		outdir,
 		sourcemap: true,
 		bundle: true,
 		write: false,
-		platform: "browser",
 		define: {
 			"process.env.NODE_ENV": JSON.stringify(
 				process.env.NODE_ENV || "development",
