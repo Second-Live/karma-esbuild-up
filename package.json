@@ -5,7 +5,7 @@
 	"main": "dist/index.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/marvinhagemeister/karma-esbuild.git"
+		"url": "git+https://github.com/Second-Live/karma-esbuild-up.git"
 	},
 	"scripts": {
 		"build": "rimraf dist/ && tsc",
