@@ -1,10 +1,13 @@
+const dns = require("node:dns");
+dns.setDefaultResultOrder("ipv4first");
+
 module.exports = {
 	baseConfig: {
 		plugins: [
 			"karma-mocha",
 			"karma-mocha-reporter",
 			"karma-jsdom-launcher",
-			require("../src/index"),
+			require("../dist/index.js"),
 		],
 
 		browsers: ["jsdom"],
